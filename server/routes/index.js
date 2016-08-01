@@ -67,13 +67,13 @@ router.post('/call/:id', function(req, res) {
     twiml
       .say('Hello World!!')
       .say('Now you will hear a sound', options)
-      .play('localhost:3000/magic-chime-01.mp3') /** http://www.soundjay.com **/
+      .play('http://174.129.168.107:3000/magic-chime-01.mp3') /** http://www.soundjay.com **/
       .say('Yaaaayyyy!!');
   } else {
     twiml
       .say('Waaaasssupppp!!')
       .say('Now you will hear a sound', options)
-      .play('localhost:3000/magic-chime-02.mp3') /** http://www.soundjay.com **/
+      .play('http://174.129.168.107:3000/magic-chime-02.mp3') /** http://www.soundjay.com **/
       .say('Yaaaayyyy!!', options);
   }
  

@@ -9,7 +9,7 @@ call.triggerCall = function(to, callback) {
  
     to: to, // Any number Twilio can call
     from: '+19012974485',
-    url: 'localhost:3000/call/' + (Math.ceil((Math.random() * 10) % 2)) // the endpoint is made dynamic
+    url: 'http://174.129.168.107:3000/call/' + (Math.ceil((Math.random() * 10) % 2)) // the endpoint is made dynamic
     // Math.ceil((Math.random()*10) % 2) -> generates either 1 or 2 
     // The endpoints are made dynamic so that we can handle each response uniquely
   }, function(error, response) {
